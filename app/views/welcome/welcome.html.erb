@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dieharder</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand text-danger" href="#">DIE HARDER</a>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-collapsible">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="#section1">Characters</a></li>
+        <li><a href="#section2">Movies</a></li>
+        <li><a href="#section3">Store</a></li>
+        <li><a href="#section4">Log-In</a></li>
+
+        <li>&nbsp;</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-heart-o fa-lg"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<hr>
+<img id="hogwarts" src="http://p1.pichost.me/i/65/1891152.jpg">
+
+    <div id="section1">
+      <h1>Characters:</h1>
+      <div id="container">
+        <div id="squidman">
+          <img id="squidman" src="http://www.squidmanmovie.com/Squid%20Man%20Movie%20-%20The%20Story/Squid%20Man%20on%20the%20Train.JPG">
+        </div>
+        <div id="text1"><span> Squidmango</span> <br>
+          <p>When i get back, remind to tell you about the time i took 100 nuns to nairobi! it's not the size mate, it's how you use it. pull my finger! you're only supposed to blow the bloody doors off! jasper: your baby is the miracle the whole world has been waiting for. yes, i used a machine gun. my lord! you're a tripod.</p>
+        </div>
+      <hr>
+      <div id="edward">
+        <img id="edward" src="http://sd.keepcalm-o-matic.co.uk/i/keep-calm-and-be-team-edward-10.png">
+      </div>
+        <hr>
+      <div id="text2"> <span> Team Edward </span><br>
+          <p>You are as precious to me as you were to your own mother and father. i swore to them that i would protect you, and i haven't. you wouldn't hit a man with no trousers on, would you? i took a viagra, got stuck in me throat, i've had a stiff neck for hours. i want to shoot the pigeons... off my roof. your were only supposed to blow the bloody doors off.
+          </p>
+      </div>
+        <hr>
+      <div id="bmw">
+          <img id="bmw" src="http://1.bp.blogspot.com/-zogIJ4Wtj8U/VBwMtQ8Ix7I/AAAAAAAALik/Q5SpLikzcxk/s1600/Bmw%2B6%2BSeries%2BGran%2BCoupe%2BSedan%2B1024x768%2BSpy%2Bshots.jpg">
+      </div>
+        <hr>
+      <div id="text3"> <span> BMW 5 Series</span> <br>
+          <p>You are as precious to me as you were to your own mother and father. i swore to them that i would protect you, and i haven't. you wouldn't hit a man with no trousers on, would you? i took a viagra, got stuck in me throat, i've had a stiff neck for hours. i want to shoot the pigeons... off my roof. your were only supposed to blow the bloody doors off.
+          </p>
+      </div>
+     </div>
+    </div>
+<%= render 'form'%>
+</body>
+</html>
